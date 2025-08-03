@@ -53,7 +53,7 @@ sudo apt install build-essential libreadline-dev
 ⚙️ Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/CyberShell.git
+https://github.com/Asad-channar/CyberShell.git
 cd CyberShell
 ```
 2. Compile
