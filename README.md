@@ -1,4 +1,3 @@
-# CyberShell
 # 🦾 CyberShell - Advanced Custom Linux Shell
 
 CyberShell is a feature-rich, user-friendly custom shell built in C++ that mimics basic behavior of Unix/Linux shells like `bash` or `zsh`, while integrating colorful prompts, command history logging, aliasing, motivational banners, and custom easter eggs. It is intended for educational use, C++ system-level learning, and personal productivity enhancement.
@@ -14,7 +13,6 @@ CyberShell is a feature-rich, user-friendly custom shell built in C++ that mimic
 - [Usage](#-usage)
 - [Easter Eggs](#-easter-eggs)
 - [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
 - [License](#-license)
 
 ---
@@ -35,59 +33,43 @@ CyberShell is a feature-rich, user-friendly custom shell built in C++ that mimic
 
 ---
 
-## 🖥 Demonstration
+## ✅ Requirements
+
+CyberShell is developed and tested on **Linux** (Kali/Debian-based) systems.
+
+| Requirement         | Version / Details          |
+|---------------------|----------------------------|
+| GCC / g++ Compiler  | `g++` (v9.0 or above)      |
+| OS                  | Linux (Debian/Kali/Ubuntu) |
+| Library             | `libreadline-dev`          |
+| Make (optional)     | For build automation       |
+
+### 📦 Install dependencies
 
 ```bash
-batman@kali:/home/batman [15:00] [CyberShell ⚔] $ cd ~/Desktop
-[⏱ Took: 0.00s]
-
-batman@kali:~/Desktop [15:00] [CyberShell ⚔] $ alias ll="ls -la"
-Alias set: ll => ls -la
-
-batman@kali:~/Desktop [15:00] [CyberShell ⚔] $ batman
-🦇 I’m Batman. I fight for justice in the night!
-
-batman@kali:~/Desktop [15:00] [CyberShell ⚔] $ ls
-Desktop  Documents  Downloads
-✅ Requirements
-CyberShell is developed and tested on Linux (Kali/Debian-based) systems.
-
-Requirement	Version / Details
-GCC / g++ Compiler	g++ (v9.0 or above)
-OS	Linux (Debian/Kali/Ubuntu)
-Library	libreadline-dev
-Make (optional)	For build automation
-
-📦 Install dependencies
-bash
-Copy
-Edit
 sudo apt update
 sudo apt install build-essential libreadline-dev
+```
 ⚙️ Installation
 1. Clone the repository
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/your-username/CyberShell.git
 cd CyberShell
+```
 2. Compile
-bash
-Copy
-Edit
+ ```bash
 g++ main.cpp executor.cpp parser.cpp builtins.cpp alias.cpp log.cpp -o cybershell -lreadline
+```
 🚦 Usage
 Launch the shell by running:
-
-bash
-Copy
-Edit
+```bash
 ./cybershell
+```
 You will be greeted with a welcome banner and motivational quote, then dropped into your custom prompt.
 
 🐣 Easter Eggs
 The shell includes fun command easter eggs for:
-
+```bash
 batman 🦇
 
 joker 🃏
@@ -105,13 +87,11 @@ alexander 🛡️
 aurangzeb 👑
 
 napoleon 🎖️
-
+```
 These commands print special quotes or lines.
 
 📁 Project Structure
-ruby
-Copy
-Edit
+```bash
 CyberShell/
 ├── main.cpp           # Entry point
 ├── executor.cpp       # Executes parsed commands
@@ -122,20 +102,10 @@ CyberShell/
 ├── *.h                # Header files for all components
 ├── .au_shell_history  # Logged command history
 └── README.md          # This file
-🛠️ Contributing
-Contributions are welcome! Feel free to fork the repo, open pull requests, or report issues.
+```
 
-Fork it 🍴
-
-Create your feature branch git checkout -b feature/foo
-
-Commit your changes git commit -am 'Add feature'
-
-Push to the branch git push origin feature/foo
-
-Create a new Pull Request
 
 📄 License
 This project is licensed under the MIT License.
 
-Built with ❤️ by [Your Name] — Always pushing limits with C++
+Built with ❤️ by [Asad Muhammad Channar] — Always pushing limits with C++
